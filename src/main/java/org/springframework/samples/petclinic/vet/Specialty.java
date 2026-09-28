@@ -1,5 +1,5 @@
 /*
- * Copyright 2012-2019 the original author or authors.
+ * Copyright 2012-2025 the original author or authors.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -15,12 +15,10 @@
  */
 package org.springframework.samples.petclinic.vet;
 
-import java.io.Serializable;
-
-import javax.persistence.Entity;
-import javax.persistence.Table;
-
 import org.springframework.samples.petclinic.model.NamedEntity;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.Table;
 
 /**
  * Models a {@link Vet Vet's} specialty (for example, dentistry).
@@ -29,6 +27,6 @@ import org.springframework.samples.petclinic.model.NamedEntity;
  */
 @Entity
 @Table(name = "specialties")
-public class Specialty extends NamedEntity implements Serializable {
+public class Specialty extends NamedEntity {
 
 }
